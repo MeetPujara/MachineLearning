@@ -77,9 +77,9 @@ st.markdown("""
 # --- Load model, scaler, columns ---
 def load_models():
     try:
-        model = joblib.load("KNN_Heart.pkl")
-        scaler = joblib.load("scaler.pkl")
-        columns = joblib.load("columns.pkl")
+        model = joblib.load("03_ClassificationAlgorithms/KNN_Heart.pkl")
+        scaler = joblib.load("03_ClassificationAlgorithms/scaler.pkl")
+        columns = joblib.load("03_ClassificationAlgorithms/columns.pkl")
         return model, scaler, columns
     except Exception as e:
         st.error(f"❌ Model or dependencies not found: {e}")
